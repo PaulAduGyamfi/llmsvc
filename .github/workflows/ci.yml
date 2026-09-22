@@ -16,3 +16,6 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run pyright
       - run: uv run pytest -v
+        env:
+          LLMKIT_PROVIDER_API_KEY: test-key
+          LLMKIT_BASE_URL: http://test
