@@ -20,9 +20,6 @@ llmsvc = "llmsvc:main"
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
 
-[tool.uv.sources]
-llmkit = { path = "../llmkit", editable = true }
-
 [dependency-groups]
 dev = [
     "httpx>=0.28.1",
@@ -49,3 +46,6 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "ASYNC"]
+
+[tool.uv.sources]
+llmkit = { git = "https://github.com/PaulAduGyamfi/llmkit" }

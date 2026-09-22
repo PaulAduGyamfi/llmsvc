@@ -206,27 +206,11 @@ wheels = [
 [[package]]
 name = "llmkit"
 version = "0.1.0"
-source = { editable = "../llmkit" }
+source = { git = "https://github.com/PaulAduGyamfi/llmkit#716703f254add7d16eed563af3c981b16bd6d2f4" }
 dependencies = [
     { name = "httpx" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "pydantic", specifier = ">=2.13.5" },
-    { name = "pydantic-settings", specifier = ">=2.15.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "pre-commit", specifier = ">=4.6.2" },
-    { name = "pyright", specifier = ">=1.1.414" },
-    { name = "pytest", specifier = ">=9.1.1" },
-    { name = "pytest-asyncio", specifier = ">=1.4.0" },
-    { name = "ruff", specifier = ">=0.16.8" },
 ]
 
 [[package]]
@@ -252,7 +236,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "fastapi", specifier = ">=0.141.1" },
-    { name = "llmkit", editable = "../llmkit" },
+    { name = "llmkit", git = "https://github.com/PaulAduGyamfi/llmkit" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.53.0" },
 ]
 
